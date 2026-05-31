@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Game</title>
+    <link rel="stylesheet" href="styles.css?v=2" />
+  </head>
+  <body class="reader-page">
+    <header class="topbar">
+      <a class="brand" href="index.html">About Game</a>
+      <nav class="nav">
+        <a class="active" href="index.html">随机文章</a>
+      </nav>
+    </header>
+
+    <main class="reader-shell">
+      <section class="book-stage" aria-label="随机文章书本">
+        <div class="book" id="book">
+          <div class="book-spine" aria-hidden="true"></div>
+          <article class="page page-left">
+            <p class="rating" id="articleRating">个人感受 --/10</p>
+            <h1>
+              <a id="articleTitle" href="#" target="_blank" rel="noreferrer">点击右侧按钮随机一篇文章</a>
+            </h1>
+            <p class="category" id="articleCategory">游戏设计文章库</p>
+            <div class="pill-row" id="articleTags">
+              <span class="pill">设计理论</span>
+              <span class="pill">叙事</span>
+              <span class="pill">战斗</span>
+            </div>
+          </article>
+          <article class="page page-right">
+            <p class="page-kicker">当前筛选</p>
+            <p class="filter-text" id="filterText">任意文章</p>
+            <p class="hint">点击标题打开原文。</p>
+          </article>
+        </div>
+      </section>
+
+      <aside class="random-panel" aria-label="随机控制">
+        <button class="action-button primary" id="randomAny" type="button">随机一篇</button>
+        <div class="selector-line">
+          <select id="categorySelect" aria-label="选择分类"></select>
+          <button class="action-button category-button" id="randomCategory" type="button">随机分类</button>
+        </div>
+        <div class="selector-line">
+          <select id="tagSelect" aria-label="选择标签"></select>
+          <button class="action-button tag-button" id="randomTag" type="button">随机标签</button>
+        </div>
+        <p class="empty-note" id="emptyNote" hidden>这个筛选下还没有文章。</p>
+      </aside>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="app.js?v=3"></script>
+  </body>
+</html>
