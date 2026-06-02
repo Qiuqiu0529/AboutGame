@@ -663,7 +663,9 @@ function readLibrary() {
   try {
     const parsed = JSON.parse(raw);
     if (Array.isArray(parsed)) {
-      return parsed;
+      const merged = mergeArticles(defaultArticles, parsed);
+      writeLibrary(merged);
+      return merged;
     }
   } catch (error) {
     console.warn("Failed to parse article library.", error);
@@ -671,6 +673,13 @@ function readLibrary() {
 
   writeLibrary(defaultArticles);
   return [...defaultArticles];
+}
+
+function mergeArticles(sourceArticles, savedArticles) {
+  const merged = new Map();
+  sourceArticles.forEach((article) => merged.set(article.id || article.url, article));
+  savedArticles.forEach((article) => merged.set(article.id || article.url, article));
+  return [...merged.values()];
 }
 
 function writeLibrary(articles) {
