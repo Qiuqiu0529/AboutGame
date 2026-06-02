@@ -2,6 +2,304 @@ const STORAGE_KEY = "game-design-article-library";
 
 const defaultArticles = [
   {
+    "id": "a-mpws57a8-fia8wl",
+    "title": "以眼说话",
+    "url": "https://baike.baidu.com/item/%E4%BB%A5%E7%9C%BC%E8%AF%B4%E8%AF%9D/9364429",
+    "category": "叙事",
+    "tags": [
+      "镜头"
+    ],
+    "rating": 10
+  },
+  {
+    "id": "a-mpws3n93-x55r78",
+    "title": "Ultimate Guide to Camera Movement — Every Camera Movement Technique Explained [The Shot List Ep6]",
+    "url": "https://www.youtube.com/watch?v=IiyBo-qLDeM&t=19s",
+    "category": "叙事",
+    "tags": [
+      "镜头"
+    ],
+    "rating": 10
+  },
+  {
+    "id": "a-mpws1ma0-5ewemf",
+    "title": "游戏电影学研究：通过蒙太奇技法压缩游戏中时间的12个叙事技巧",
+    "url": "https://zhuanlan.zhihu.com/p/639779239",
+    "category": "叙事",
+    "tags": [
+      "工具",
+      "镜头"
+    ],
+    "rating": 8
+  },
+  {
+    "id": "a-mpws0ffa-urtw77",
+    "title": "Procedural Generation of Cinematic Dialogues in 'Assassin's Creed Odyssey'",
+    "url": "https://www.youtube.com/watch?v=DFM5zbekZ7c",
+    "category": "叙事",
+    "tags": [
+      "工具",
+      "叙事解析",
+      "PCG"
+    ],
+    "rating": 8
+  },
+  {
+    "id": "a-mpwrxd08-zn3kd6",
+    "title": "如何让玩家拥有独一无二的故事体验？浅谈程序化生成叙事",
+    "url": "https://www.gameres.com/884806.html",
+    "category": "叙事",
+    "tags": [
+      "PCG"
+    ],
+    "rating": 8
+  },
+  {
+    "id": "a-mpwrv72t-vavxp4",
+    "title": "程序生成叙事是不是旁门左道？",
+    "url": "https://mp.weixin.qq.com/s/F4Biw5MUuJt4oRQSNE95Ow",
+    "category": "叙事",
+    "tags": [
+      "PCG"
+    ],
+    "rating": 8
+  },
+  {
+    "id": "a-mpwrues2-0m346v",
+    "title": "基于大数据的语言模型与程序化叙事生成（下）",
+    "url": "https://www.gcores.com/articles/161185",
+    "category": "叙事",
+    "tags": [
+      "大模型",
+      "PCG"
+    ],
+    "rating": 8
+  },
+  {
+    "id": "a-mpwrtxjv-o6eapp",
+    "title": "基于大数据的语言模型与程序化叙事生成（上）",
+    "url": "https://www.gcores.com/articles/160270",
+    "category": "叙事",
+    "tags": [
+      "大模型",
+      "PCG"
+    ],
+    "rating": 8
+  },
+  {
+    "id": "a-mpwrt12v-23tkpn",
+    "title": "AI+多剧情游戏，能让玩家拥有更多选择吗？",
+    "url": "https://mp.weixin.qq.com/s/KA435-RhIwQe-1_IAAiddw",
+    "category": "叙事",
+    "tags": [
+      "大模型",
+      "PCG"
+    ],
+    "rating": 7
+  },
+  {
+    "id": "a-mpwrrgnm-mbwecb",
+    "title": "Game AI Summit: Multiagent Planning for Large-Scale Narrative Content",
+    "url": "https://gdcvault.com/play/1035557/Game-AI-Summit-Multiagent-Planning",
+    "category": "叙事",
+    "tags": [
+      "大模型",
+      "工具",
+      "叙事解析",
+      "PCG"
+    ],
+    "rating": 8
+  },
+  {
+    "id": "a-mpwrng1k-wfj5zr",
+    "title": "环境叙事实践：共创世界之旅",
+    "url": "https://www.gameres.com/893995.html",
+    "category": "叙事",
+    "tags": [
+      "环境叙事",
+      "世界观"
+    ],
+    "rating": 9
+  },
+  {
+    "id": "a-mpwrlucp-wrmrx3",
+    "title": "拆解经典游戏，玩转剧情与玩法的融合设计",
+    "url": "https://gameinstitute.qq.com/article/10038",
+    "category": "叙事",
+    "tags": [
+      "故事",
+      "玩法"
+    ],
+    "rating": 10
+  },
+  {
+    "id": "a-mpwrk78i-5ffmlz",
+    "title": "环境叙事设计——创造不孤独的沉浸世界",
+    "url": "https://zhuanlan.zhihu.com/p/360723508",
+    "category": "叙事",
+    "tags": [
+      "环境叙事"
+    ],
+    "rating": 10
+  },
+  {
+    "id": "a-mpwrh67i-11t54p",
+    "title": "Design vs. Story: How 'Uncharted: The Lost Legacy' Addressed the Elephant in the Room",
+    "url": "https://gdcvault.com/play/1025652/Design-vs-Story-How-Uncharted",
+    "category": "叙事",
+    "tags": [
+      "叙事解析"
+    ],
+    "rating": 8
+  },
+  {
+    "id": "a-mpwrbr5n-jw59e8",
+    "title": "Emergent Storytelling Techniques in 'The Sims'",
+    "url": "https://www.gdcvault.com/play/1025112/Emergent-Storytelling-Techniques-in-The",
+    "category": "叙事",
+    "tags": [
+      "叙事解析",
+      "涌现"
+    ],
+    "rating": 9
+  },
+  {
+    "id": "a-mpwr9trv-txx1rh",
+    "title": "天刀手游上线 | 波澜壮阔，草蛇灰线，讲了五年多的江湖故事如何创作",
+    "url": "https://gameinstitute.qq.com/knowledge/100089",
+    "category": "叙事",
+    "tags": [
+      "叙事解析"
+    ],
+    "rating": 8
+  },
+  {
+    "id": "a-mpwr6t7g-5ufvvz",
+    "title": "Words to Worlds: Exploring Narrative Writing in AAA Games",
+    "url": "https://toronto.ubisoft.com/words-to-worlds-exploring-narrative-writing-in-aaa-games-at-gdc-2023/",
+    "category": "叙事",
+    "tags": [
+      "开放世界",
+      "叙事解析"
+    ],
+    "rating": 8
+  },
+  {
+    "id": "a-mpwqs4if-0uawem",
+    "title": "FPP, Storytelling, and Player-as-an-Actor: Interactive Scenes in 'Cyberpunk 2077'",
+    "url": "https://gdcvault.com/play/1027889/FPP-Storytelling-and-Player-as",
+    "category": "叙事",
+    "tags": [
+      "叙事解析"
+    ],
+    "rating": 8
+  },
+  {
+    "id": "a-mpwqpucx-95qfjk",
+    "title": "《巫师3》剧情解构：如何在任务驱动的剧情框架下打动玩家？",
+    "url": "https://game.xiaomi.com/viewpoint/1393220466_1682218785616_100",
+    "category": "叙事",
+    "tags": [
+      "叙事解析"
+    ],
+    "rating": 8
+  },
+  {
+    "id": "a-mpwqmp51-nutrhr",
+    "title": "浅析《最后生还者2》叙事技法及可能的问题",
+    "url": "https://mp.weixin.qq.com/s/Wsl1ROh_dtD-1YLnobl0zQ",
+    "category": "叙事",
+    "tags": [
+      "叙事解析"
+    ],
+    "rating": 7
+  },
+  {
+    "id": "a-mpwqljpr-34mue1",
+    "title": "从《艾迪芬奇的记忆》看游戏中的混合式叙事",
+    "url": "https://zhuanlan.zhihu.com/p/468866929",
+    "category": "叙事",
+    "tags": [
+      "叙事解析"
+    ],
+    "rating": 8
+  },
+  {
+    "id": "a-mpwqi93z-28euu1",
+    "title": "'Disco Elysium': Meaningless Choices and Impractical Advice",
+    "url": "https://gdcvault.com/play/1027160/-Disco-Elysium-Meaningless-Choices",
+    "category": "叙事",
+    "tags": [
+      "对话",
+      "极乐迪斯科",
+      "叙事解析"
+    ],
+    "rating": 9
+  },
+  {
+    "id": "a-mpwqfb89-q9v2r4",
+    "title": "《Detroit：Become Human》玩家情感故事背后的叙事魔法和体验设计 - GameRes游资网",
+    "url": "https://www.gameres.com/861121.html",
+    "category": "叙事",
+    "tags": [
+      "叙事解析"
+    ],
+    "rating": 8
+  },
+  {
+    "id": "a-mpwqef2y-rboxxf",
+    "title": "深度分析《零世代》剧情设计：环境叙事增强了游戏的“孤独感”",
+    "url": "https://www.gameres.com/853547.html",
+    "category": "叙事",
+    "tags": [
+      "环境叙事",
+      "叙事解析"
+    ],
+    "rating": 8
+  },
+  {
+    "id": "a-mpwqd7ew-qgqd9t",
+    "title": "最美游戏《奥日》团队分享：如何视觉叙事、将剧情与关卡无缝融合？ | 游戏大观 | GameLook.com.cn",
+    "url": "http://www.gamelook.com.cn/2022/03/475380/",
+    "category": "叙事",
+    "tags": [
+      "关卡",
+      "叙事解析"
+    ],
+    "rating": 8
+  },
+  {
+    "id": "a-mpwqa6ne-ezzzqa",
+    "title": "深入探究Mutazione的叙事设计和“多重选择”",
+    "url": "https://www.gameres.com/861199.html",
+    "category": "叙事",
+    "tags": [
+      "叙事解析"
+    ],
+    "rating": 7
+  },
+  {
+    "id": "a-mpwq9alp-qu0tx7",
+    "title": "游戏中的空间驱动时间与《Edith Finch》叙事艺术",
+    "url": "https://zhuanlan.zhihu.com/p/29824451",
+    "category": "叙事",
+    "tags": [
+      "叙事解析"
+    ],
+    "rating": 8
+  },
+  {
+    "id": "a-mpwq6uvb-ck585p",
+    "title": "《极乐迪斯科》剧情系统设计拆解",
+    "url": "https://zhuanlan.zhihu.com/p/709336823",
+    "category": "叙事",
+    "tags": [
+      "极乐迪斯科",
+      "叙事解析"
+    ],
+    "rating": 9
+  },
+  {
     "id": "a-mpu0t8uv-zb4vnj",
     "title": "分支剧情创作中的挑战和工具",
     "url": "https://indienova.com/indie-game-development/tools-for-branching-dialogs-and-narrative/",
@@ -352,7 +650,7 @@ const defaultArticles = [
       "故事"
     ],
     "rating": 7
-  },
+  }
 ];
 
 function readLibrary() {
