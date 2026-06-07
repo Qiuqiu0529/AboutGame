@@ -741,3 +741,397 @@ input[type="range"]::-moz-range-thumb {
     grid-template-columns: 1fr;
   }
 }
+
+.reader-page {
+  background: #9fc7ce;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.water-topbar {
+  background: linear-gradient(180deg, rgba(62, 110, 128, 0.26), rgba(62, 110, 128, 0));
+  color: #0D3E52;
+  pointer-events: none;
+}
+
+.water-topbar .brand,
+.water-count {
+  color: #0D3E52;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.28);
+}
+
+.water-topbar .brand {
+  pointer-events: auto;
+}
+
+.water-count {
+  font-size: 15px;
+  font-weight: 850;
+  margin: 0;
+}
+
+.water-scene {
+  background:
+    radial-gradient(circle at 22% 18%, rgba(255, 255, 255, 0.32), transparent 26%),
+    radial-gradient(circle at 82% 8%, rgba(255, 255, 255, 0.16), transparent 24%),
+    linear-gradient(180deg, #acd0d4 0%, #77adbd 54%, #4f91aa 100%);
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.water-glow {
+  animation: waterDrift 18s ease-in-out infinite alternate;
+  background:
+    linear-gradient(115deg, transparent 0 32%, rgba(255, 255, 255, 0.16) 42%, transparent 54%),
+    linear-gradient(75deg, transparent 0 46%, rgba(255, 255, 255, 0.12) 52%, transparent 62%);
+  inset: -12%;
+  opacity: 0.82;
+  position: absolute;
+}
+
+.wave-layer {
+  animation: waveMove 24s linear infinite;
+  background-image:
+    radial-gradient(ellipse at 50% 100%, transparent 0 58%, rgba(255, 255, 255, 0.24) 60%, transparent 64%),
+    radial-gradient(ellipse at 50% 0%, transparent 0 60%, rgba(36, 105, 130, 0.2) 62%, transparent 66%);
+  background-size: 210px 56px;
+  height: 42vh;
+  left: -18%;
+  opacity: 0.78;
+  position: absolute;
+  right: -18%;
+  filter: blur(3px);
+  
+}
+
+.wave-layer-back {
+  animation-duration: 34s;
+  bottom: 48vh;
+  opacity: 0.28;
+}
+
+.wave-layer-mid {
+  animation-direction: reverse;
+  animation-duration: 26s;
+  bottom: 26vh;
+  opacity: 0.42;
+}
+
+.wave-layer-front {
+  animation-duration: 18s;
+  bottom: -2vh;
+  opacity: 0.58;
+}
+
+.boat-field {
+  inset: 8vh 0 6vh;
+  pointer-events: none;
+  position: absolute;
+}
+
+.paper-boat-button {
+  animation:
+    sailAcross var(--sail-duration) linear var(--sail-delay) infinite,
+    boatBob 4.4s ease-in-out var(--sail-delay) infinite;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  height: 118px;
+  left: -210px;
+  padding: 0;
+  pointer-events: auto;
+  position: absolute;
+  top: var(--boat-top);
+  transform: translate3d(-210px, 0, 0) scale(var(--boat-scale));
+  transform-origin: center;
+  width: 199px;
+}
+
+.paper-boat-button:hover .paper-boat,
+.paper-boat-button:focus-visible .paper-boat {
+  filter: drop-shadow(0 16px 16px rgba(12, 59, 82, 0.32)) brightness(1.05);
+  transform: translateY(-5px) rotate(-1deg);
+}
+
+.paper-boat-button:focus-visible {
+  outline: none;
+}
+
+.paper-boat-button.is-viewed {
+  opacity: 0.6;
+
+}
+
+.paper-boat {
+  display: block;
+  height: 117px;
+  position: relative;
+  transition:
+    filter 160ms ease,
+    transform 160ms ease;
+  width: 184px;
+}
+
+.boat-shadow {
+  background: rgba(24, 72, 88, 0.22);
+  border-radius: 50%;
+  bottom: 2px;
+  filter: blur(1px);
+  height: 20px;
+  left: 22px;
+  position: absolute;
+  transform: skewX(-24deg);
+  width: 90px;
+}
+
+.boat-wing-left,
+.boat-main-sail,
+.boat-bow,
+.boat-center-fold,
+.boat-hull {
+  position: absolute;
+}
+
+.boat-wing-left {
+  background: linear-gradient(148deg, #f1eee7 0%, #d1cbc0 100%);
+  clip-path: polygon(0% 100%, 100% 100%, 66% 0%);
+  height: 60px;
+  left: 30px;
+  top: 0px;
+  width: 48px;
+  z-index: 2;
+}
+
+.boat-main-sail {
+  background: linear-gradient(148deg, #eeeee7 0%, #efefeb 100%);
+  clip-path: polygon(0% 0%, 26% 100%, 100% 88%);
+  height: 60px;
+  left: 60px;
+  top: 0px;
+  width: 68px;
+  z-index: 4;
+}
+
+.boat-bow {
+  background: linear-gradient(150deg, #ffffff 0%, #efefec 78%);
+  clip-path: polygon(0% 26%, 56% 100%, 100% 0%);
+  height: 63px;
+  left: 78px;
+  top: 40px;
+  width: 90px;
+  z-index: 5;
+}
+
+.boat-center-fold {
+  background: linear-gradient(50deg, #E7E0D7 0%, #e9e3d8 60%, #f5f3ee 100%);
+  clip-path: polygon(0% 100%, 50% 0%, 100% 88%);
+  height: 60px;
+  left: 30px;
+  top: 50px;
+  width: 98px;
+  z-index: 3;
+}
+
+.boat-hull {
+  background: linear-gradient(168deg, #fffefa 0%, #e7e1d7 64%, #d7d1c6 100%);
+  clip-path: polygon(0% 0%, 48% 100%, 92% 8%);
+  height: 58px;
+  left: -25px;
+  top: 52px;
+  width: 114px;
+  z-index: 6;
+}
+
+.note-overlay {
+  align-items: center;
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  padding: 24px;
+  pointer-events: none;
+  position: fixed;
+  z-index: 20;
+}
+
+.note-overlay[hidden] {
+  display: none;
+}
+
+.article-note {
+  animation: noteIn 220ms ease-out;
+  background:
+    radial-gradient(circle at 12% 4%, rgba(0, 0, 0, 0.06), transparent 11%),
+    radial-gradient(circle at 92% 94%, rgba(0, 0, 0, 0.05), transparent 13%),
+    linear-gradient(180deg, #fffefa, #f2eee2);
+  box-shadow:
+    0 28px 60px rgba(27, 75, 92, 0.28),
+    inset 0 0 24px rgba(105, 92, 70, 0.08);
+  clip-path: polygon(
+    1% 9%,
+    8% 5%,
+    18% 6%,
+    27% 2%,
+    37% 5%,
+    48% 3%,
+    61% 6%,
+    74% 3%,
+    87% 6%,
+    98% 4%,
+    96% 18%,
+    99% 31%,
+    96% 45%,
+    98% 60%,
+    95% 75%,
+    97% 92%,
+    84% 95%,
+    70% 93%,
+    57% 98%,
+    43% 94%,
+    30% 97%,
+    17% 94%,
+    4% 97%,
+    6% 82%,
+    2% 67%,
+    5% 51%,
+    2% 35%,
+    4% 21%
+  );
+  max-width: min(720px, 92vw);
+  min-height: 320px;
+  padding-top: clamp(42px, 6vw, 72px);
+  padding-bottom: clamp(42px, 6vw, 72px);
+
+  padding-left: clamp(50px, 8vw, 90px);
+  padding-right: clamp(40px, 5vw, 70px);
+  pointer-events: auto;
+  width: min(720px, 92vw);
+}
+
+.note-rating {
+  font-size: clamp(16px, 2vw, 28px);
+  font-weight: 850;
+  margin: 0 20 14px;
+}
+
+.article-note h1 {
+  font-size: clamp(36px, 5vw, 52px);
+  letter-spacing: 0;
+  line-height: 1.05;
+  margin: 0 20 20px;
+  overflow-wrap: anywhere;
+}
+
+.note-category {
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 900;
+  margin: 0 20 18px;
+}
+
+.note-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.note-tag {
+  background: #d9d9d9;
+  border-radius: 999px;
+  font-weight: 850;
+  padding: 6px 18px;
+}
+
+.note-link {
+  background: #0D3E52;
+  border-radius: 999px;
+  color: #fffefa;
+  display: inline-flex;
+  font-weight: 900;
+  padding: 12px 22px;
+  text-decoration: none;
+}
+
+.note-link:hover {
+  background: #1d5870;
+}
+
+@keyframes sailAcross {
+  0% {
+    left: -180px;
+  }
+  100% {
+    left: calc(100vw + 180px);
+  }
+}
+
+@keyframes boatBob {
+  0%,
+  100% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -18px;
+  }
+}
+
+@keyframes waveMove {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(210px);
+  }
+}
+
+@keyframes waterDrift {
+  from {
+    transform: translateX(-3%) translateY(-1%);
+  }
+  to {
+    transform: translateX(3%) translateY(1%);
+  }
+}
+
+@keyframes noteIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px) rotate(-1deg) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+}
+
+@media (max-width: 760px) {
+  .water-topbar {
+    align-items: flex-start;
+    gap: 4px;
+    padding: 18px;
+    position: fixed;
+  }
+
+  .water-count {
+    font-size: 13px;
+  }
+
+  .boat-field {
+    inset: 12vh 0 8vh;
+  }
+
+  .paper-boat-button {
+    height: 82px;
+    width: 112px;
+  }
+
+  .paper-boat {
+    transform: scale(0.86);
+    transform-origin: left top;
+  }
+
+  .article-note {
+    min-height: 280px;
+    padding: 42px 30px;
+  }
+}
