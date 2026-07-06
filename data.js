@@ -2,6 +2,321 @@ const STORAGE_KEY = "game-design-article-library";
 
 const defaultArticles =[
   {
+    "id": "a-mr9eifb8-iol0up",
+    "title": "在资源有限时，如何设计出可重复挑战的游戏关卡？",
+    "url": "https://gameinstitute.qq.com/article/10017",
+    "category": "关卡",
+    "tags": [],
+    "rating": 9
+  },
+  {
+    "id": "a-mr9ehgmu-4k3i31",
+    "title": "<游戏关卡设计>新手指南",
+    "url": "https://mp.weixin.qq.com/s/nHa4HJfwoc06gyTWBvpi-w",
+    "category": "关卡",
+    "tags": [],
+    "rating": 8
+  },
+  {
+    "id": "a-mr9eg71k-1183xf",
+    "title": "关卡设计概念(LevelDesignConcepts)",
+    "url": "https://mp.weixin.qq.com/s/mneo_0BqxOw_e5weixJ6Hg",
+    "category": "关卡",
+    "tags": [],
+    "rating": 8
+  },
+  {
+    "id": "a-mr9efe4i-1gev8g",
+    "title": "游戏设计集 · 什么是关卡设计 & 如何制作游戏关卡",
+    "url": "https://zhuanlan.zhihu.com/p/457342254",
+    "category": "关卡",
+    "tags": [],
+    "rating": 9
+  },
+  {
+    "id": "a-mr9eetob-um59pj",
+    "title": "游戏关卡设计入门（上）",
+    "url": "https://mp.weixin.qq.com/s/UuU-BhPdFfVUWwUgpMIU7A",
+    "category": "关卡",
+    "tags": [],
+    "rating": 8
+  },
+  {
+    "id": "a-mr9eek7v-vfy9uh",
+    "title": "关卡设计工具箱（基础篇）：关卡设计三要素",
+    "url": "https://www.gcores.com/articles/153431",
+    "category": "关卡",
+    "tags": [],
+    "rating": 10
+  },
+  {
+    "id": "a-mr9ech5r-6aeast",
+    "title": "Learning Materials - Multiplayer Game Map Theory (Halo)",
+    "url": "https://www.zhihu.com/en/article/602496307",
+    "category": "关卡",
+    "tags": [],
+    "rating": 9
+  },
+  {
+    "id": "a-mr9ec137-0qun06",
+    "title": "从CS到守望先锋，以空间的角度看第一人称竞技游戏的关卡设计",
+    "url": "https://mp.weixin.qq.com/s/PeTALu4jB6TMvtfrqPeQ_A",
+    "category": "关卡",
+    "tags": [],
+    "rating": 8
+  },
+  {
+    "id": "a-mr9ebbnd-y07ovy",
+    "title": "游戏关卡的空间设计原理（上）：自由度，精确性与层的概念",
+    "url": "https://mp.weixin.qq.com/s/ZlqSM3ZqqRctpf5h1uH6sw",
+    "category": "关卡",
+    "tags": [],
+    "rating": 9
+  },
+  {
+    "id": "a-mr9eae9w-skkdb4",
+    "title": "跨界造物：有趣！游戏关卡设计中的建筑学思维与方法",
+    "url": "https://mp.weixin.qq.com/s/EBrbTEYG5TViy5MiQBRVRA",
+    "category": "关卡",
+    "tags": [],
+    "rating": 9
+  },
+  {
+    "id": "a-mr9e9mfl-p4mhbz",
+    "title": "以现代建筑思潮探讨关卡场景设计",
+    "url": "https://gameinstitute.qq.com/knowledge/100075",
+    "category": "关卡",
+    "tags": [],
+    "rating": 9
+  },
+  {
+    "id": "a-mr9e96ac-ra2a9k",
+    "title": "多人对抗类游戏的10个空间布局原则",
+    "url": "https://www.gameres.com/893702.html",
+    "category": "关卡",
+    "tags": [],
+    "rating": 9
+  },
+  {
+    "id": "a-mr9e8beg-o89u78",
+    "title": "建筑学在关卡设计的应用和界限（一）",
+    "url": "https://www.gcores.com/articles/22104",
+    "category": "关卡",
+    "tags": [],
+    "rating": 9
+  },
+  {
+    "id": "a-mr9e1zu9-ybqf4h",
+    "title": "我在建筑学院学到的101件事",
+    "url": "https://book.douban.com/subject/4100551/",
+    "category": "关卡",
+    "tags": [
+      "成长"
+    ],
+    "rating": 10
+  },
+  {
+    "id": "a-mr9dyriy-rwj08p",
+    "title": "Breathing Life Into 'The Last of Us': Part I and II",
+    "url": "https://www.youtube.com/watch?v=8PEcUX4HA8Q",
+    "category": "系统",
+    "tags": [
+      "故事"
+    ],
+    "rating": 9
+  },
+  {
+    "id": "a-mr9dwhby-zrs4mc",
+    "title": "【程序猿】最终幻想15的关卡AI控制系统",
+    "url": "https://mp.weixin.qq.com/s/kKHLaPIpb-sozUe-0X4Eug",
+    "category": "关卡",
+    "tags": [],
+    "rating": 9
+  },
+  {
+    "id": "a-mr9dvenn-cpiqy4",
+    "title": "深得中小团队偏爱的品类，【肉鸽游戏】前世今生深度解析",
+    "url": "https://www.gameres.com/907303.html",
+    "category": "玩法",
+    "tags": [],
+    "rating": 8
+  },
+  {
+    "id": "a-mr9dsc9g-e1idiw",
+    "title": "ROGUE肉鸽三要素：目标&成长&新鲜",
+    "url": "https://zhuanlan.zhihu.com/p/709341267",
+    "category": "关卡",
+    "tags": [],
+    "rating": 8
+  },
+  {
+    "id": "a-mr9drux2-h6wdrw",
+    "title": "肉鸽(roguelike)游戏中的随机关卡设计：怪物、资源、模式三元素",
+    "url": "https://www.163.com/dy/article/GRVP070J0526DPBA.html",
+    "category": "关卡",
+    "tags": [],
+    "rating": 9
+  },
+  {
+    "id": "a-mr9dqq9x-ud88nk",
+    "title": "RPG游戏“关卡”&“战斗”设计秘籍",
+    "url": "https://zhuanlan.zhihu.com/p/414222813",
+    "category": "关卡",
+    "tags": [],
+    "rating": 9
+  },
+  {
+    "id": "a-mr9dq5kx-9p6pgz",
+    "title": "如何打造AAA游戏关卡：PVE关卡模式设计策略",
+    "url": "https://gameinstitute.qq.com/knowledge/100123",
+    "category": "关卡",
+    "tags": [],
+    "rating": 9
+  },
+  {
+    "id": "a-mr9dpge2-57wdsv",
+    "title": "PVE关卡设计浅谈：千万不要拍脑袋！",
+    "url": "https://zhuanlan.zhihu.com/p/538509952",
+    "category": "关卡",
+    "tags": [],
+    "rating": 8
+  },
+  {
+    "id": "a-mr9dozmx-t929h9",
+    "title": "资深游戏设计师：优秀关卡设计的十大原则",
+    "url": "http://www.gamelook.com.cn/2020/12/407406/",
+    "category": "关卡",
+    "tags": [],
+    "rating": 9
+  },
+  {
+    "id": "a-mr9dnug7-cizlif",
+    "title": "游戏无障碍设计参考",
+    "url": "https://indienova.com/indie-game-development/game-accessibility-guidelines-prologue/",
+    "category": "设计理论",
+    "tags": [
+      "体验"
+    ],
+    "rating": 10
+  },
+  {
+    "id": "a-mr9brjl1-hs1458",
+    "title": "The Level Design Book",
+    "url": "https://book.leveldesignbook.com/",
+    "category": "关卡",
+    "tags": [],
+    "rating": 10
+  },
+  {
+    "id": "a-mr9bqf8j-5pmtkx",
+    "title": "让关卡设计玩出花样：提升关卡独特性的五种技巧",
+    "url": "https://zhuanlan.zhihu.com/p/494566210",
+    "category": "关卡",
+    "tags": [],
+    "rating": 9
+  },
+  {
+    "id": "a-mr9bprxd-yox91u",
+    "title": "关于关卡设计的一点积累",
+    "url": "https://mp.weixin.qq.com/s/OEDdkAzIe448Daygpz8Amw",
+    "category": "关卡",
+    "tags": [
+      "成长"
+    ],
+    "rating": 8
+  },
+  {
+    "id": "a-mr9bp7bc-7oarkv",
+    "title": "游戏场景与关卡设计的11个步骤",
+    "url": "https://zhuanlan.zhihu.com/p/54144653",
+    "category": "关卡",
+    "tags": [],
+    "rating": 8
+  },
+  {
+    "id": "a-mr9bofai-pzmg4e",
+    "title": "博弈论与FPS游戏关卡平衡性分析",
+    "url": "https://zhuanlan.zhihu.com/p/363785591",
+    "category": "关卡",
+    "tags": [
+      "博弈"
+    ],
+    "rating": 9
+  },
+  {
+    "id": "a-mr9bn6d7-0yrt42",
+    "title": "关卡设计-追求卓越",
+    "url": "https://zhuanlan.zhihu.com/p/527151650",
+    "category": "关卡",
+    "tags": [
+      "关卡"
+    ],
+    "rating": 10
+  },
+  {
+    "id": "a-mr9bm7i7-75766n",
+    "title": "游戏设计理念笔记——IPMT理论",
+    "url": "https://zhuanlan.zhihu.com/p/607958281",
+    "category": "设计理论",
+    "tags": [
+      "成长"
+    ],
+    "rating": 8
+  },
+  {
+    "id": "a-mr9bf6x5-grsljs",
+    "title": "游戏博弈论研究：浅谈15个博弈论理论在游戏设计中的应用",
+    "url": "https://zhuanlan.zhihu.com/p/641288002",
+    "category": "设计理论",
+    "tags": [
+      "博弈"
+    ],
+    "rating": 8
+  },
+  {
+    "id": "a-mr9bekas-owu884",
+    "title": "游戏论｜赌博赌的是什么——关于“运气游戏”的思考",
+    "url": "https://mp.weixin.qq.com/s/BT4rk27ktCfoqQTl6O2Now",
+    "category": "设计理论",
+    "tags": [
+      "博弈"
+    ],
+    "rating": 8
+  },
+  {
+    "id": "a-mr9b6yza-0a6py2",
+    "title": "不同岗位游戏策划都可以参考的\"规择感",
+    "url": "https://www.gcores.com/articles/211629",
+    "category": "设计理论",
+    "tags": [
+      "成长",
+      "职业"
+    ],
+    "rating": 8
+  },
+  {
+    "id": "a-mr9b4v3m-rvxp76",
+    "title": "创意清醒：论游戏开发中的原创性",
+    "url": "https://gdcvault.com/play/1035058/Game-Career-Seminar-STR-DEX",
+    "category": "设计理论",
+    "tags": [
+      "成长",
+      "职业"
+    ],
+    "rating": 9
+  },
+  {
+    "id": "a-mr9avcl2-butiky",
+    "title": "手记1：游戏研究相关书籍目录",
+    "url": "https://zhuanlan.zhihu.com/p/75135160",
+    "category": "设计理论",
+    "tags": [
+      "成长",
+      "职业"
+    ],
+    "rating": 9
+  },
+  {
     "id": "a-mpu0t8uv-zb4vnj",
     "title": "分支剧情创作中的挑战和工具",
     "url": "https://indienova.com/indie-game-development/tools-for-branching-dialogs-and-narrative/",
