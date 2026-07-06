@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Game | 知识图谱</title>
+    <link rel="stylesheet" href="styles.css?v=7" />
+  </head>
+  <body class="graph-page">
+    <header class="topbar graph-topbar">
+      <a class="brand" href="index.html">About Game</a>
+      <nav class="nav water-nav">
+        <a href="index.html">随机文章</a>
+        <a class="active" href="graph.html">知识图谱</a>
+      </nav>
+      <p class="graph-stat" id="graphStat">知识图谱</p>
+    </header>
+
+    <main class="graph-shell">
+      <section class="graph-toolbar" aria-label="图谱筛选与操作">
+        <div class="graph-filter-block">
+          <p class="graph-filter-title">分类</p>
+          <div class="graph-chip-row" id="categoryFilters"></div>
+        </div>
+        <div class="graph-filter-block">
+          <p class="graph-filter-title">标签</p>
+          <div class="graph-chip-row" id="tagFilters"></div>
+        </div>
+        <div class="graph-actions" aria-label="图谱操作">
+          <button class="graph-action primary" id="rebuildButton" type="button">一键重排</button>
+          <button class="graph-action" id="zoomOutButton" type="button">缩小</button>
+          <button class="graph-action" id="zoomResetButton" type="button">重置</button>
+          <button class="graph-action" id="zoomInButton" type="button">放大</button>
+        </div>
+      </section>
+
+      <section class="graph-stage" id="graphStage" aria-label="文章知识图谱">
+        <div class="graph-grid" aria-hidden="true"></div>
+        <div class="graph-viewport" id="graphViewport">
+          <svg class="graph-links" id="graphLinks" aria-hidden="true"></svg>
+          <div class="graph-nodes" id="graphNodes"></div>
+        </div>
+        <div class="graph-legend">
+          <span>分类</span>
+          <span>标签</span>
+          <span>文章</span>
+        </div>
+      </section>
+
+      <aside class="graph-detail" id="graphDetail" hidden>
+        <button class="graph-close" id="graphClose" type="button">关闭</button>
+        <p class="graph-detail-rating" id="graphDetailRating">个人感受 --/10</p>
+        <h1 id="graphDetailTitle">文章标题</h1>
+        <p class="graph-detail-category" id="graphDetailCategory">分类</p>
+        <div class="graph-detail-tags" id="graphDetailTags"></div>
+        <a class="graph-detail-link" id="graphDetailLink" href="#" target="_blank" rel="noreferrer">打开文章</a>
+      </aside>
+    </main>
+
+    <script src="data.js?v=3"></script>
+    <script src="graph.js?v=2"></script>
+  </body>
+</html>
