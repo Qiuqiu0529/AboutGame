@@ -1383,7 +1383,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .graph-detail-category {
-  color: #d7f7ff;
+  color: #73AABB;
   font-size: 18px;
   font-weight: 900;
   margin: 0 0 12px;
@@ -1406,7 +1406,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .graph-detail-link {
-  background: linear-gradient(135deg, #78d4ff, #8eebc6);
+  background: linear-gradient(135deg, #77adbd, #acd0d4);
   border-radius: 999px;
   color: #09222d;
   display: inline-flex;
